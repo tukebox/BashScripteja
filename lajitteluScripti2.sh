@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# SKRIPTI TIEDOSTOJEN LAJITTELUUN KUUKAUDEN JA VUODEN MUKAAN JONA NE OVAT LUOTU
+# Skripti luo oman kansion jokaiselle vuodelle ja sen sisään kansion jokaiselle
+# kuukaudelle ja siirtää tiedostot kansioihin
+
+# Sopii hyvin vaikkapa videoiden ja kuvien lajitteluun
+
+# skriptille syötetään tiedostomuoto (esim. jpg, mp4...)
+# Skriptin täytyy sijaita samassa hakemistossa kuin tiedostot, jotka halutaan lajitella
 read -p 'Anna tiedostotyyppi: ' tyyppi
 
 for file in $(find . -name "*.$tyyppi")
